@@ -2,14 +2,13 @@
 <html>
 <head>
     <title>Simple Cookbook</title>
-    <script src="script3.js"></script>
+    <script type="text/javascript" src="script3.js"></script>
 </head>
 <body>
     <h1>Simple Cookbook</h1>
-
     <h2>Add a Recipe</h2>
-    
-    <form id="recipe-form">
+
+    <form id="recipe-form" action="#">
         <label for="recipe-name">Recipe Name:</label><br>
         <input type="text" id="recipe-name" name="recipe-name"><br><br>
         <label for="ingredients">Ingredients:</label><br>
@@ -20,7 +19,7 @@
         <ol id="instructions-list"></ol>
         <input type="text" id="instruction-input" name="instruction">
         <button type="button" onclick="addInstruction()">Add</button><br><br>
-        <button type="submit">Save Recipe</button>
+        <button id="tempBugFix" onclick="saveRecipe()">Save Recipe</button>
     </form>
 
     <h2>Recipes</h2>

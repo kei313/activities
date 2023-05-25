@@ -1,10 +1,7 @@
-let recipes = []; //serves as book for all process
-
-document.getElementById("recipe-form").addEventListener("submit", function (event) {
-    event.preventDefault();
-    saveRecipe();
-});
-
+let recipes = []; //serves as book for all process 
+window.onload = function () {
+    document.getElementById("tempBugFix").click(); //first input doesnt push thru unless connection with js // problem started after separated html n js
+};
 function addIngredient() { //populate ingre output
     let ingredient = document.getElementById("ingredient-input").value;
     if (ingredient) {
