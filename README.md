@@ -1,0 +1,2 @@
+# activities
+ Javascript activities compilation
